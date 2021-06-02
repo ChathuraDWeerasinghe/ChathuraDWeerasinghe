@@ -1,0 +1,485 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+section{
+	padding: 100px;
+}
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: url(background.jpg);
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner h2{
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+	font-family: Bahnschrift Condensed;
+}
+.banner h2 .span1{
+	font-size: 1.5em;
+	font-weight: 500;
+	font-family: Bahnschrift Condensed;
+}
+.banner h2 .span2{
+	font-size: 1em;
+	font-weight: 600;
+	font-family: Bahnschrift Condensed;
+}
+.banner h3{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+}
+.aboutBtn{
+	position: relative;
+	background: rgba(255 255 255 0);
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: #FFF solid 2px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition-duration: 0.5s;
+	transition-property: color;
+	transition-property: background;
+}
+.aboutBtn:hover{
+	background: #fff;
+	color: #000;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition-property: padding;
+	transition-duration: 0.4s;
+}
+header{
+	transition-property: background;
+	transition-duration: 1s;
+}
+header.sticky{
+	background: #fff;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+header.sticky .logo{
+	color: #111;
+}
+header ul{
+	position: relative;
+	display: flex;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	margin: 0px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	transition-duration: 0.3s;
+	transition-property: color;
+}
+header ul li a:hover{
+	color: #FFA400;
+}
+header.sticky ul li a:hover{
+	color: #FFA400;
+}
+header.sticky ul li a{
+	color: #111;
+}
+.heading{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+}
+.heading h2{
+	font-weight: 600;
+	font-size: 30px;
+}
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+.contentB h3{
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+.contentB p{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.contentB{
+	padding-right: 30px;
+}
+.w50{
+	min-width: 50%;
+}
+img{
+	max-width: 720px;
+	width: 86vw;
+	border-radius: 5px;
+}
+.services{
+	background: #000;
+}
+.heading.service{
+	color: #fff;
+}
+.services .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.services .content .servicesB{
+	padding: 40px 40px;
+	background: #222;
+	color: #fff;
+	max-width: 340px;
+	margin: 20px;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold;
+	transition-property: background;
+	transition: 0.5s;
+}
+.services .content .servicesB:hover{
+	background: #FFA400;
+	color: #000;
+}
+.services .content .servicesB img{
+	max-width: 120px;
+	filter: invert(1);
+}
+.services .content .servicesB h2{
+	font-size: 20px;
+	font-weight: 600;
+}
+.viewBtn{
+	position: relative;
+	background: #FFA400;
+	display: inline-block;
+	color: #000;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	border: #FFF solid 2px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition-duration: 0.5s;
+	transition-property: color;
+	transition-property: background;
+	border: #FFA400 solid 2px;
+}
+.viewBtn:hover{
+	background: rgba(255, 255, 255, 0);
+	color: #000;
+	border: #FFA400 solid 2px;
+}
+.work .content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.work .content .contentB{
+	width: 50%;
+	padding: 20px;
+}
+.work .content .contentB img{
+	max-width: 100%;
+}
+.testimonial{
+	background: #f7f7f7;
+}
+.testimonial .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.testimonial .content .testimonialB{
+	max-width: calc(50% - 40px);
+	padding: 60px 40px;
+	margin: 20px;
+	background: #FFA400;
+}
+.testimonial .content .testimonialB p{
+	color: #000;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+.testimonial .content .testimonialB h3{
+	margin-top: 40px;
+	text-align: end;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1em;
+}
+.testimonial .content .testimonialB h3 span{
+	font-weight: 400;
+	font-size: 14px;
+}
+.contact{
+	background: #000;
+}
+.formBox{
+	min-width: 60%;
+}
+.formBox form{
+	display: flex;	
+	flex-direction: column;
+}
+.formBox form h3, 
+.contactInfo h3{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.formBox form input, 
+.formBox form textarea{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	border: #989898 solid 0.5px;
+	border-radius: 10px;
+	outline: none;
+	background: #222;
+	color: #fff;
+	resize: none;
+}
+.formBox form textarea{
+	min-height: 200px;
+}
+.formBox form input::placeholder, 
+.formBox form textarea::placeholder{
+	color: #999;
+}
+.formBox form input[type = "submit"]{
+	max-width: 100px;
+	background: transparent;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: #FFF solid 2px;
+	border-radius: 10px;
+	font-weight: bold;
+	transition-duration: 0.5s;
+	transition-property: color;
+	transition-property: background;
+}
+.formBox form input[type = "submit"]:hover{
+	background: #fff;
+	color: #000;
+	border: #fff solid 2px;
+}
+.contactInfo{
+	min-width: 40%;
+}
+.contactInfoBox{
+	position: relative;
+}
+.contactInfoBox .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.contactInfoBox .box .icon{
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
+.contactInfoBox .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.contactInfoBox .box .text h3{
+	font-weight: 500;
+	color: #FFA400;
+	margin-bottom: 0;
+}
+.signature{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.pageup{
+	width: 100%;
+	max-height: 80px;
+	padding: 20px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #212121;
+}
+.pageup .up .upto a i{
+	color: #fff;
+	font-size: 100px;
+	transition: 0.5s;
+	transition-property: padding;
+}
+.pageup .up .upto a i:hover{
+	padding: 0 0 80px 0;
+}
+.pageup .up .upto a i:active{
+	color: #FFA400;
+}
+
+/*responsive*/
+
+@media (max-width: 990px){
+	header, header.sticky{
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+	.menu{
+		position: fixed;
+		top: 68px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	.menu.active{
+		left: 0;
+	}
+	header ul li a{
+		color: #111;
+		font-size: 24px;
+		margin: 10px;
+	}
+	.toggle{
+		width: 40px;
+		height: 40px;
+		background: url(menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.active{
+		width: 40px;
+		height: 40px;
+		background: url(close.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+	header.sticky .toggle{
+		filter: invert(1);
+	}
+	section{
+		padding: 100px 50px;
+	}
+	.banner{
+		padding: 100px 50px 100px;
+	}
+	.banner h2{
+		font-size: 1.5em;
+	}
+	.banner h3{
+		font-size: 1em;
+	}
+	.btn{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	.heading h2{
+		font-size: 24px;
+	}
+	.contentB h3{
+		font-size: 20px;
+	}
+	.content{
+		flex-direction: column;
+	}
+	.w50{
+		margin-bottom: 20px;
+	}
+	.services .content .servicesB{
+		margin: 10px;
+	}
+	.work .content .contentB{
+		width: 100%;
+		padding: 10px 0 0 40px;
+	}
+	.testimonial .content .testimonialB{
+		max-width: calc(100% - 20px);
+		padding: 40px 20px;
+		margin: 10px;
+		background: #FFA400;
+	}
+	.testimonial .content .testimonialB h3{
+		margin-top: 20px;
+	}
+	.contactInfo{
+		margin: 20px 0;
+	}
+}
+@media (max-width:  600px){
+	header, header.sticky{
+		padding: 20px 20px;
+	}
+	.banner{
+		padding: 100px 20px 100px;
+	}
+	section{
+		padding: 100px 20px;
+	}
+}
